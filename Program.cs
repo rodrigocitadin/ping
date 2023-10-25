@@ -11,7 +11,6 @@ byte[] buffer = Encoding.ASCII.GetBytes(data);
 int timeout = 150;
 string address = "4.2.2.2";
 
-
 PingReply reply = pingSender.Send(address, timeout, buffer, options);
 
 if (reply.Status == IPStatus.Success)
